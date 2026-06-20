@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-06-20 14:39:26.420020",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "monthly_revenue_goal",
+  "required_billable_hours",
+  "utilization_percentage",
+  "required_available_hours",
+  "required_resources"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Month"
+  },
+  {
+   "fieldname": "monthly_revenue_goal",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Monthly Revenue Goal"
+  },
+  {
+   "fieldname": "required_billable_hours",
+   "fieldtype": "Float",
+   "label": "Required Billable Hours"
+  },
+  {
+   "fieldname": "required_available_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Required Available Hours"
+  },
+  {
+   "fieldname": "required_resources",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Required Resources"
+  },
+  {
+   "fieldname": "utilization_percentage",
+   "fieldtype": "Percent",
+   "label": "Utilization %"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-20 15:51:49.027835",
+ "modified_by": "Administrator",
+ "module": "NxR",
+ "name": "Monthly Target Resource",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-06-19 21:08:26.697432",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "column_break_ykxt",
+  "to_date",
+  "working_hours_per_day",
+  "column_break_uebd",
+  "working_days",
+  "working_hours_per_month",
+  "section_break_nmxy",
+  "fetch_employee",
+  "resource_capacity_detail",
+  "section_break_pkci",
+  "column_break_xzjd",
+  "total_billable_hours",
+  "column_break_zcdi",
+  "average_billing_rate",
+  "column_break_gtdv",
+  "revenue_capacity",
+  "realistic_revenue_target_section",
+  "realization_percentage",
+  "column_break_ebgu",
+  "realistic_revenue_target"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_ykxt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "default": "8",
+   "fieldname": "working_hours_per_day",
+   "fieldtype": "Float",
+   "label": "Working Hours Per Day"
+  },
+  {
+   "fieldname": "column_break_uebd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "working_days",
+   "fieldtype": "Int",
+   "label": "Working Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "working_hours_per_month",
+   "fieldtype": "Float",
+   "label": "Working Hours Per Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_nmxy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fetch_employee",
+   "fieldtype": "Button",
+   "label": "Fetch Employee"
+  },
+  {
+   "fieldname": "resource_capacity_detail",
+   "fieldtype": "Table",
+   "label": "Resource Capacity Detail",
+   "options": "Resource Capacity Detail"
+  },
+  {
+   "fieldname": "section_break_pkci",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xzjd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zcdi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gtdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_billable_hours",
+   "fieldtype": "Float",
+   "label": "Total Billable Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "average_billing_rate",
+   "fieldtype": "Float",
+   "label": "Average Billing Rate"
+  },
+  {
+   "description": "Per Month",
+   "fieldname": "revenue_capacity",
+   "fieldtype": "Float",
+   "label": "Revenue Capacity",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "realistic_revenue_target_section",
+   "fieldtype": "Section Break",
+   "label": "Realistic Revenue Target"
+  },
+  {
+   "fieldname": "column_break_ebgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Per Month",
+   "fieldname": "realistic_revenue_target",
+   "fieldtype": "Float",
+   "label": "Realistic Revenue Target"
+  },
+  {
+   "fieldname": "realization_percentage",
+   "fieldtype": "Percent",
+   "label": "Realization %"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-20 12:24:24.020210",
+ "modified_by": "Administrator",
+ "module": "NxR",
+ "name": "Revenue Target",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
