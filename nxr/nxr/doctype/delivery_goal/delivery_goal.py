@@ -8,7 +8,7 @@ from frappe.model.document import Document
 from frappe.utils import getdate, flt
 
 
-class RevenueGoal(Document):
+class DeliveryGoal(Document):
 	pass
 
 
@@ -45,7 +45,7 @@ def generate_monthly_targets(
 
 	year = getdate(date).year
 
-	monthly_revenue_goal = yearly_target_amount / 12
+	monthly_delivery_goal = yearly_target_amount / 12
 
 	holiday_list = frappe.get_all(
 		"Holiday List",
@@ -101,13 +101,13 @@ def generate_monthly_targets(
 		working_hours = working_days * 8
 
 		required_billable_hours = (
-			monthly_revenue_goal / average_bill_rate
+			monthly_delivery_goal / average_bill_rate
 			if average_bill_rate else 0
 		)
 
 		data.append({
 			"month": months[month_no - 1],
-			"monthly_revenue_goal": round(monthly_revenue_goal, 2),
+			"monthly_revenue_goal": round(monthly_delivery_goal, 2),
 			"required_billable_hours": round(required_billable_hours, 2),
 			"working_hours": working_hours
 		})

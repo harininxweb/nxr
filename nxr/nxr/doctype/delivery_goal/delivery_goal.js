@@ -1,7 +1,7 @@
 // Copyright (c) 2026, Nxweb and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("Revenue Goal", {
+frappe.ui.form.on("Delivery Goal", {
 	refresh(frm) {
 		get_average_bill_rate(frm);
 	},
@@ -19,7 +19,7 @@ frappe.ui.form.on("Revenue Goal", {
 		}
 
 		frappe.call({
-			method: "nxr.nxr.doctype.revenue_goal.revenue_goal.generate_monthly_targets",
+			method: "nxr.nxr.doctype.delivery_goal.delivery_goal.generate_monthly_targets",
 			args: {
 				yearly_target_amount: frm.doc.yearly_target_amount,
 				average_bill_rate: frm.doc.average_bill_rate,
@@ -51,7 +51,7 @@ frappe.ui.form.on("Revenue Goal", {
 function get_average_bill_rate(frm) {
 
 	frappe.call({
-		method: "nxr.nxr.doctype.revenue_goal.revenue_goal.get_average_bill_rate",
+		method: "nxr.nxr.doctype.delivery_goal.delivery_goal.get_average_bill_rate",
 		callback(r) {
 			if (r.message) {
 				frm.set_value("average_bill_rate", r.message);

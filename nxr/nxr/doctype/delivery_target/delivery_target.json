@@ -2,6 +2,7 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
+ "autoname": "DT-.#####",
  "creation": "2026-06-19 21:08:26.697432",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -115,7 +116,6 @@
    "read_only": 1
   },
   {
-   "collapsible": 1,
    "fieldname": "realistic_revenue_target_section",
    "fieldtype": "Section Break",
    "label": "Realistic Revenue Target"
@@ -139,10 +139,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-20 12:24:24.020210",
+ "modified": "2026-06-23 09:33:33.696493",
  "modified_by": "Administrator",
  "module": "NxR",
- "name": "Revenue Target",
+ "name": "Delivery Target",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

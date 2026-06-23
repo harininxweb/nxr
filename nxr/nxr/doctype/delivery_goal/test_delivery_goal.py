@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestRevenueGoal(IntegrationTestCase):
+class IntegrationTestDeliveryGoal(IntegrationTestCase):
 	"""
-	Integration tests for RevenueGoal.
+	Integration tests for DeliveryGoal.
 	Use this class for testing interactions between multiple components.
 	"""
 

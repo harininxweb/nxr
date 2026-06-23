@@ -1,7 +1,7 @@
 // Copyright (c) 2026, Nxweb and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("Revenue Target", {
+frappe.ui.form.on("Delivery Target", {
     refresh(frm) {
         frm.fields_dict.fetch_employee.$input.off("click").on("click", function() {
 
