@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-06-24 09:48:53.235158",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meddic_component",
+  "question",
+  "answer",
+  "weight",
+  "score",
+  "remarks",
+  "red_flag"
+ ],
+ "fields": [
+  {
+   "fieldname": "meddic_component",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Component",
+   "options": "\nMetrics\nEconomic Buyer\nDecision Criteria\nDecision Process\nIdentify Pain\nChampion"
+  },
+  {
+   "fieldname": "question",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Question",
+   "options": "Goal"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Answer"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Score"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "red_flag",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\ud83d\udea9"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-26 15:44:31.339557",
+ "modified_by": "Administrator",
+ "module": "NxR",
+ "name": "Lead Qualification Assessment",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

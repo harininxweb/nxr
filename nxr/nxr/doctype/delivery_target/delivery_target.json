@@ -8,6 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "from_date",
+  "available_hours",
   "column_break_ykxt",
   "to_date",
   "working_hours_per_day",
@@ -134,12 +135,18 @@
    "fieldname": "realization_percentage",
    "fieldtype": "Percent",
    "label": "Realization %"
+  },
+  {
+   "fieldname": "available_hours",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Available Hours"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-23 09:33:33.696493",
+ "modified": "2026-06-26 17:34:46.490947",
  "modified_by": "Administrator",
  "module": "NxR",
  "name": "Delivery Target",

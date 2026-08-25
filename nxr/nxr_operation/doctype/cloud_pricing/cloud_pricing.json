@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:pricing_catalog_name",
+ "creation": "2026-06-30 10:03:27.809280",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pricing_catalog_name",
+  "provider",
+  "pricing_type",
+  "column_break_cwpq",
+  "effective_from",
+  "curency",
+  "status",
+  "section_break_swei",
+  "instance_type",
+  "memory_gb",
+  "cost_per_vcpu",
+  "storage_cost_per_gb",
+  "column_break_viuv",
+  "monthly_price",
+  "disk_gb",
+  "cost_per_gb_ram",
+  "margin__20",
+  "column_break_hzwn",
+  "daily_price",
+  "family__category",
+  "cost_per_gb_disk",
+  "margin__30",
+  "column_break_jnvt",
+  "vcpu",
+  "location",
+  "additional_storage_available",
+  "section_break_zoed",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "provider",
+   "fieldtype": "Select",
+   "label": "Provider",
+   "options": "\nHetzner CCX\nAWS Graviton\nDigital Ocean\nOracle Cloud"
+  },
+  {
+   "fieldname": "column_break_cwpq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pricing_type",
+   "fieldtype": "Select",
+   "label": "Pricing Type",
+   "options": "\nDedicated Server\nShared Hosting\nVPS\nCloud Instance"
+  },
+  {
+   "fieldname": "pricing_catalog_name",
+   "fieldtype": "Data",
+   "label": "Pricing Catalog Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nActive\nInactive"
+  },
+  {
+   "default": "Today",
+   "fieldname": "effective_from",
+   "fieldtype": "Date",
+   "label": "Effective From"
+  },
+  {
+   "fieldname": "curency",
+   "fieldtype": "Link",
+   "label": "Curency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "section_break_zoed",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_swei",
+   "fieldtype": "Section Break",
+   "label": "Cloud Pricing Detail"
+  },
+  {
+   "fieldname": "instance_type",
+   "fieldtype": "Select",
+   "label": "Instance Type",
+   "options": "\nccx13\nccx23\nccx33\nccx43\nccx53\nccx63\nc8g.large\nm8g.large\nr8g.large\nc8g.xlarge\nm8g.xlarge\nr8g.xlarge\nc8g.2xlarge\nm8g.2xlarge\nr8g.2xlarge\nc8g.4xlarge\nm8g.4xlarge\nr8g.4xlarge\ng-2vcpu-8gb\ng-4vcpu-16gb\ng-8vcpu-32gb\ng-16vcpu-64gb\n2x4\n2x8\n2x16\n4x8\n4x16\n4x32\n8x16\n8x32\n8x64\n16x32\n16x64\n16x128"
+  },
+  {
+   "fieldname": "monthly_price",
+   "fieldtype": "Float",
+   "label": "Monthly Price"
+  },
+  {
+   "fieldname": "daily_price",
+   "fieldtype": "Float",
+   "label": "Daily Price"
+  },
+  {
+   "fieldname": "vcpu",
+   "fieldtype": "Int",
+   "label": "vCPU"
+  },
+  {
+   "fieldname": "column_break_viuv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hzwn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jnvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "memory_gb",
+   "fieldtype": "Float",
+   "label": "Memory (GB)"
+  },
+  {
+   "fieldname": "disk_gb",
+   "fieldtype": "Float",
+   "label": "Disk (GB)"
+  },
+  {
+   "fieldname": "family__category",
+   "fieldtype": "Select",
+   "label": "Family / Category",
+   "options": "\nDedicated vCPU\nCompute Optimized\nGeneral Purpose\nMemory Optimized\nBalanced"
+  },
+  {
+   "fieldname": "cost_per_vcpu",
+   "fieldtype": "Float",
+   "label": "Cost per vCPU"
+  },
+  {
+   "fieldname": "cost_per_gb_ram",
+   "fieldtype": "Float",
+   "label": "Cost per GB RAM"
+  },
+  {
+   "fieldname": "cost_per_gb_disk",
+   "fieldtype": "Float",
+   "label": "Cost per GB Disk"
+  },
+  {
+   "default": "0",
+   "fieldname": "additional_storage_available",
+   "fieldtype": "Check",
+   "label": "Additional Storage Available"
+  },
+  {
+   "fieldname": "storage_cost_per_gb",
+   "fieldtype": "Float",
+   "label": "Storage Cost Per GB"
+  },
+  {
+   "fieldname": "margin__20",
+   "fieldtype": "Float",
+   "label": "Margin @ 20%"
+  },
+  {
+   "fieldname": "margin__30",
+   "fieldtype": "Float",
+   "label": "Margin @ 30%"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-03 10:34:29.533197",
+ "modified_by": "Administrator",
+ "module": "NxR Operation",
+ "name": "Cloud Pricing",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

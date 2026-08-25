@@ -34,7 +34,8 @@
    "fieldname": "available_hours",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Available Hours"
+   "label": "Available Hours",
+   "read_only": 1
   },
   {
    "fieldname": "billable_hours",
@@ -61,7 +62,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-06-20 09:24:27.397187",
+ "modified": "2026-06-26 17:41:02.053435",
  "modified_by": "Administrator",
  "module": "NxR",
  "name": "Resource Capacity Detail",

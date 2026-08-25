@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-06-30 17:32:58.933366",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "instance_type",
+  "monthly_price",
+  "daily_price",
+  "vcpu",
+  "memory_gb",
+  "disk_gb",
+  "family_category",
+  "column_break_bkco",
+  "cost_per_vcpu",
+  "cost_per_gb_ram",
+  "cost_per_gb_disk",
+  "location",
+  "additional_storage_available",
+  "storage_cost_per_gb",
+  "margin__20",
+  "margin__30",
+  "section_break_fgvy",
+  "erpnext_suggested_usage"
+ ],
+ "fields": [
+  {
+   "fieldname": "vcpu",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "vCPU"
+  },
+  {
+   "fieldname": "column_break_bkco",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "instance_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Instance Type",
+   "options": "\nccx13\nccx23\nccx33\nccx43\nccx53\nccx63\nc8g.large\nm8g.large\nr8g.large\nc8g.xlarge\nm8g.xlarge\nr8g.xlarge\nc8g.2xlarge\nm8g.2xlarge\nr8g.2xlarge\nc8g.4xlarge\nm8g.4xlarge\nr8g.4xlarge\ng-2vcpu-8gb\ng-4vcpu-16gb\ng-8vcpu-32gb\ng-16vcpu-64gb\n2x4\n2x8\n2x16\n4x8\n4x16\n4x32\n8x16\n8x32\n8x64\n16x32\n16x64\n16x128"
+  },
+  {
+   "fieldname": "monthly_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Monthly Price"
+  },
+  {
+   "fieldname": "daily_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Daily Price"
+  },
+  {
+   "fieldname": "memory_gb",
+   "fieldtype": "Float",
+   "label": "Memory (GB)"
+  },
+  {
+   "fieldname": "disk_gb",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Disk (GB)"
+  },
+  {
+   "fieldname": "cost_per_vcpu",
+   "fieldtype": "Currency",
+   "label": "Cost per vCPU"
+  },
+  {
+   "fieldname": "cost_per_gb_ram",
+   "fieldtype": "Float",
+   "label": "Cost per GB RAM"
+  },
+  {
+   "fieldname": "cost_per_gb_disk",
+   "fieldtype": "Float",
+   "label": "Cost per GB Disk"
+  },
+  {
+   "fieldname": "erpnext_suggested_usage",
+   "fieldtype": "Small Text",
+   "label": "ERPNext Suggested Usage"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "additional_storage_available",
+   "fieldtype": "Check",
+   "label": "Additional Storage Available"
+  },
+  {
+   "fieldname": "storage_cost_per_gb",
+   "fieldtype": "Float",
+   "label": "Storage Cost Per GB"
+  },
+  {
+   "fieldname": "margin__20",
+   "fieldtype": "Float",
+   "label": "Margin @ 20%"
+  },
+  {
+   "fieldname": "margin__30",
+   "fieldtype": "Float",
+   "label": "Margin @ 30%"
+  },
+  {
+   "fieldname": "section_break_fgvy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "family_category",
+   "fieldtype": "Select",
+   "label": "Family / Category",
+   "options": "\nDedicated vCPU\nCompute Optimized\nGeneral Purpose\nMemory Optimized\nBalanced"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-01 10:57:36.530942",
+ "modified_by": "Administrator",
+ "module": "NxR Operation",
+ "name": "Cloud Pricing Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
